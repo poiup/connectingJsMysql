@@ -57,9 +57,13 @@ public class JDBCIDSControl {
 						System.out.println("email : " + rs.getString(4));
 						System.out.println("-----------------------");
 					}
+					rs.close();
 				} 
 			}
 			System.out.println("종료합니다.");
+			con.close();
+			stmt.close();
+			
 		} catch(Exception e) {
 			e.printStackTrace();
 			System.out.println("프로그램이 종료됩니다");
