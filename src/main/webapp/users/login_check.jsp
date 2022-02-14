@@ -33,6 +33,7 @@
 			if(fId.equals(rs.getString(2))){
 				if(fPw.equals(rs.getString(3))){
 					session.setAttribute("login_pass", rs.getString(1));
+					session.setAttribute("login_uid", rs.getString(2));
 					rs.close();
 					pstmt.close();
 					con.close();

@@ -44,6 +44,7 @@
 			<p>비밀번호 : <input type ="password" name = "fPw" placeholder="비밀번호" required></p>
 			<p id = "login_submit"><input type ="submit" value = "로그인" ></p>
 		</form>
+		<button><a href = "join_form.jsp">회원가입</a></button>
 	</div>
 </body>
 </html>
