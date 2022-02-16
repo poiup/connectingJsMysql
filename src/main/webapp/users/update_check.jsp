@@ -31,6 +31,8 @@
 		// 수정 쿼리 전송
 		int update = pstmt.executeUpdate();
 		
+		pstmt.close();
+		con.close();
 		// 수정 완료후 원래패이지로 돌아가기
 		response.sendRedirect("login_update.jsp");
 	} catch(Exception e){
@@ -45,6 +47,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+	<h1><%= uId %>님의 회원정보가 수정되었습니다.</h1>
+	<a href = "login_update.jsp">웰컴페이지로 돌아가기</a>
 </body>
 </html>
